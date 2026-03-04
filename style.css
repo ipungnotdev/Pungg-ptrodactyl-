@@ -1,0 +1,90 @@
+/* General */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+a {text-decoration: none; color: inherit;}
+.container {max-width:1200px;margin:2rem auto;padding:0 1rem;}
+
+/* Banner Logo */
+.banner-logo {
+  width: 100%;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0; /* ruang atas bawah */
+}
+.banner-logo img {
+  max-width: 300px; /* sesuaikan ukuran logo */
+  height: auto;
+  object-fit: contain;
+}
+
+/* Panel Grid */
+.panel-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:1rem;
+  margin-bottom:2rem;
+}
+.panel-card {
+  background-color:#1e1e1e;
+  border-radius:10px;
+  padding:1rem;
+  border:2px solid #333;
+  transition:transform 0.2s,border-color 0.2s;
+}
+.panel-card:hover {transform:translateY(-5px);border-color:#ff9800;}
+.panel-card h3 {color:#ff9800;margin-bottom:0.5rem;}
+.panel-card p {margin-bottom:1rem;}
+.order-btn {
+  display:inline-block;
+  padding:0.5rem 1rem;
+  background-color:#ff9800;
+  color:#121212;
+  font-weight:bold;
+  border-radius:5px;
+  transition:0.2s;
+}
+.order-btn:hover {background-color:#e68a00;}
+
+/* Features Card */
+.features-card {
+  background-color:#1e1e1e;
+  border:2px solid #ff9800;
+  border-radius:12px;
+  padding:1.5rem;
+  max-width:800px;
+  margin:2rem auto;
+}
+.features-card h2 {
+  color:#ff9800;
+  margin-bottom:1rem;
+  text-align:center;
+}
+.features-card ul {list-style:none;padding-left:0;}
+.features-card li {margin-bottom:0.5rem;padding-left:1.5rem;position:relative;}
+.features-card li::before {content:'✅';position:absolute;left:0;}
+
+/* CS toggle */
+.cs-toggle {
+  position:fixed;top:20px;left:20px;font-size:1.5rem;color:#ff9800;cursor:pointer;z-index:101;
+}
+.cs-card {
+  position:fixed;top:60px;left:20px;width:250px;background-color:#1e1e1e;
+  border:2px solid #ff9800;border-radius:10px;z-index:100;display:none;
+}
+.cs-header {display:flex;justify-content:flex-end;align-items:center;padding:0.5rem;}
+.cs-header .close {font-size:1.2rem;color:#ff9800;cursor:pointer;}
+.cs-body {padding:0.5rem;}
+.cs-body a {
+  display:block;padding:0.4rem 0.6rem;margin-bottom:0.4rem;
+  background-color:#333;color:#ff9800;border-radius:5px;transition:0.2s;
+}
+.cs-body a:hover{background-color:#444;}
+
+footer {text-align:center;padding:1rem;border-top:1px solid #333;color:#888;}
