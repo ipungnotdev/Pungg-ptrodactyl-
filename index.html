@@ -3,99 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pungg Panel</title>
+<title>Ipungg Panel Pterodactyl</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Banner -->
-<div class="banner-logo">
-  <img src="https://img2.pixhost.to/images/6182/701369060_alip-1772614460918.jpg" alt="Logo Banner">
+
+<div id="loading">
+  <img src="https://img2.pixhost.to/images/6210/701726612_alip-1772715346783.png" alt="Loading...">
+  <p>Memuat Panel...</p>
 </div>
 
-<div class="container">
 
-  <!-- Panel Grid -->
-  <div class="panel-grid">
-    <div class="panel-card">
-      <h3>1GB</h3>
-      <p>1K / bulan</p>
-      <a class="order-btn" href="https://wa.me/17422770604?text=Saya%20ingin%20order%201GB%20panel" target="_blank">Order Panel</a>
-    </div>
-    <div class="panel-card">
-      <h3>2GB</h3>
-      <p>2K / bulan</p>
-      <a class="order-btn" href="https://wa.me/17422770604?text=Saya%20ingin%20order%202GB%20panel" target="_blank">Order Panel</a>
-    </div>
-    <div class="panel-card">
-      <h3>3GB</h3>
-      <p>3K / bulan</p>
-      <a class="order-btn" href="https://wa.me/17422770604?text=Saya%20ingin%20order%203GB%20panel" target="_blank">Order Panel</a>
-    </div>
-    <div class="panel-card">
-      <h3>4GB</h3>
-      <p>4K / bulan</p>
-      <a class="order-btn" href="https://wa.me/17422770604?text=Saya%20ingin%20order%204GB%20panel" target="_blank">Order Panel</a>
-    </div>
-    <div class="panel-card">
-      <h3>5GB</h3>
-      <p>5K / bulan</p>
-      <a class="order-btn" href="https://wa.me/17422770604?text=Saya%20ingin%20order%205GB%20panel" target="_blank">Order Panel</a>
-    </div>
-    <div class="panel-card">
-      <h3>6GB</h3>
-      <p>6K / bulan</p>
-      <a class="order-btn" href="https://wa.me/17422770604?text=Saya%20ingin%20order%206GB%20panel" target="_blank">Order Panel</a>
-    </div>
-    <div class="panel-card">
-      <h3>7GB</h3>
-      <p>7K / bulan</p>
-      <a class="order-btn" href="https://wa.me/17422770604?text=Saya%20ingin%20order%207GB%20panel" target="_blank">Order Panel</a>
-    </div>
-    <div class="panel-card">
-      <h3>Unlimited</h3>
-      <p>17K / bulan 🔥</p>
-      <a class="order-btn" href="https://wa.me/17422770604?text=Saya%20ingin%20order%20Unlimited%20panel" target="_blank">Order Panel</a>
-    </div>
-  </div>
+<video autoplay muted loop class="video-background" id="backgroundVideo">
+  <source src="https://files.catbox.moe/7s7ap6.mp4" type="video/mp4">
+</video>
+<div class="overlay"></div>
 
-  <!-- Features Card -->
-  <div class="features-card">
-    <h2>Kelebihan Layanan</h2>
-    <ul>
-      <li>Server stabil 24/7 (anti down)</li>
-      <li>Anti mokad, full garansi</li>
-      <li>Anti DDoS Protection</li>
-      <li>VPS legal & aman</li>
-      <li>Auto restart saat crash</li>
-      <li>Garansi penuh 30 hari</li>
-      <li>Bisa upgrade / perpanjang kapan saja</li>
-    </ul>
-  </div>
 
+<div class="header">
+  <img src="https://i.top4top.io/p_3452xmhfk0.jpg" alt="Logo" class="profile-image">
+  <h1 class="title">IPUNGG PTRODACTYL</h1>
+  <p class="subtitle">Solusi Hosting Panel Otomatis Terbaik</p>
 </div>
 
-<!-- CS toggle button -->
+<section class="pricing">
+  <h2 style="text-align:center; margin-bottom:20px;">Harga Panel Pterodactyl</h2>
+  <div class="card-container">
+    <!-- Product Cards disini (1GB, 3GB, 4GB, 5GB, 7GB, 9GB, Unlimited) -->
+    <!-- Copy paste dari sebelumnya -->
+  </div>
+</section>
+
+
+<div class="features-card">
+  <h2>✨ Kelebihan Layanan</h2>
+  <ul class="features-list">
+    <li>Server stabil 24/7</li>
+    <li>Anti DDoS Protection</li>
+    <li>Anti Mokad</li>
+    <li>Auto Restart saat crash</li>
+    <li>VPS legal & aman</li>
+    <li>Garansi penuh 30 hari</li>
+    <li>Bisa upgrade kapan saja</li>
+  </ul>
+</div>
+
+
 <div class="cs-toggle" onclick="toggleCS()">☰</div>
 <div class="cs-card" id="csCard">
   <div class="cs-header"><div class="close" onclick="closeCS()">✖</div></div>
   <div class="cs-body">
-    <a href="https://t.me/ipungg26" target="_blank">Admin Telegram</a>
-    <a href="https://wa.me/17422770604" target="_blank">Admin WhatsApp</a>
+    <a href="https://t.me/ipungg26" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram"> Admin Telegram
+    </a>
+    <a href="https://wa.me/6285198959920" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> Admin WhatsApp
+    </a>
   </div>
 </div>
 
-<footer>&copy; 2026 Panel Pterodactyl</footer>
-
 <script>
+
+window.addEventListener("load", function(){
+  setTimeout(()=>{document.getElementById('loading').style.display='none';}, 2000);
+});
+
+
 function toggleCS(){
   const card=document.getElementById('csCard');
   card.style.display=(card.style.display==='block')?'none':'block';
 }
-function closeCS(){
-  document.getElementById('csCard').style.display='none';
-}
+function closeCS(){document.getElementById('csCard').style.display='none';}
 </script>
 
 </body>
-</html>
+  </html>
